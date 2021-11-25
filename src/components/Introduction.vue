@@ -7,12 +7,8 @@
       <div id="container" tg-name="_" tg-ref="container" tg-from="0" tg-to="10" tg-step="1">
         <div id="fontBox" tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
         <p tg-name="opacity" tg-filter="1!" tg-follow="container">My Chinese name is
-          <b>LinagHao
-        </b>,I
-          was
-          born
-          in <a
-            href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%B7%9E%E5%B8%82">Zhengzhou</a>,Henan province.</p>
+          <b>LinagHao</b>,I was born in<a
+              href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%B7%9E%E5%B8%82"> Zhengzhou</a>,Henan province.</p>
         <p tg-name="opacity" tg-filter="2!" tg-follow="container">I'm studying in <a
             href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%B7%9E%E8%A5%BF%E4%BA%9A%E6%96%AF%E5%AD%A6%E9%99%A2">SIAS University</a> and I was born in 1999.</p>
         <p tg-name="opacity" tg-filter="3!" tg-follow="container">My undergraduate
@@ -95,13 +91,14 @@ both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both}
 #greeting{
   margin: 0 0;
   padding-bottom: -10px;
+  padding-top: 20px;
   padding-left: 30px;
   font-size: 55px;
   opacity: var(--opacity);
   transform: translateX(calc(var(--scrolled) * 10px)); /* 转换为 px 单位 */
 }
 .box {
-  margin-top: -10px;
+  margin-top: 10px;
   padding-bottom: 10px;
   /*padding-left: 30px;*/
   width: 100%;
@@ -129,7 +126,7 @@ both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both}
     50vmax 50vmax;
   background-repeat: no-repeat;
   background-color: #e493d0;
-  animation: 10s movement linear infinite;
+  animation: 5s movement linear infinite;
 }
 box::after {
   content: '';
@@ -206,6 +203,7 @@ box::after {
   animation: tracking-in-contract 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   padding-left: 30px;
   font-size: 26px;
+  margin: 0 0;
 }
 @-webkit-keyframes tracking-in-contract {
   0% {

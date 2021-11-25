@@ -6,6 +6,7 @@
       <button v-on:click="updateMsg" class="vibrate-1">{{ msg }}</button>
     </div>
     <h1 class="text-pop-up-top">HERE WE GO</h1>
+    <img class="shake-vertical" src="@/images/arrows.png">
   </div>
 </template>
 
@@ -15,11 +16,11 @@
       msg :{
         type: String,
         default:'Like There 🌈'
-      }
+      },
     },
     methods: {
       updateMsg(){
-        this.msg = 'Thanks u 🎈'
+        this.msg = 'Thanks 🎈'
       }
     }
   }
@@ -27,6 +28,16 @@
 </script>
 
 <style scoped>
+.shake-vertical{
+  -webkit-animation:shake-vertical 2.5s cubic-bezier(.455,.03,.515,.955) both;
+  animation:shake-vertical 2.5s cubic-bezier(.455,.03,.515,.955) both;
+  width: 45px;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+@-webkit-keyframes shake-vertical{0%,100%{-webkit-transform:translateY(0);transform:translateY(0)}10%,30%,50%,70%{-webkit-transform:translateY(-8px);transform:translateY(-8px)}20%,40%,60%{-webkit-transform:translateY(8px);transform:translateY(8px)}80%{-webkit-transform:translateY(6.4px);transform:translateY(6.4px)}90%{-webkit-transform:translateY(-6.4px);transform:translateY(-6.4px)}}@keyframes shake-vertical{0%,100%{-webkit-transform:translateY(0);transform:translateY(0)}10%,30%,50%,70%{-webkit-transform:translateY(-8px);transform:translateY(-8px)}20%,40%,60%{-webkit-transform:translateY(8px);transform:translateY(8px)}80%{-webkit-transform:translateY(6.4px);transform:translateY(6.4px)}90%{-webkit-transform:translateY(-6.4px);transform:translateY(-6.4px)}}
+
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -252,12 +263,11 @@
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 .vibrate-1 {
-  -webkit-animation: vibrate-1 0.3s linear infinite both;
-  animation: vibrate-1 0.3s linear infinite both;
+  -webkit-animation: vibrate-1 0.4s linear infinite both;
+  animation: vibrate-1 0.5s linear infinite both;
   background-color: aqua;
   border-radius: 10px;
   margin-top: -20px;
-
 }
 @-webkit-keyframes vibrate-1 {
   0% {
@@ -321,12 +331,13 @@
   padding: 5px 5px;
 }
 .text-pop-up-top {
-  -webkit-animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation: text-pop-up-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: text-pop-up-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: text-pop-up-top 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   color: white;
   font-size: 44px;
   text-align: center;
   margin-top: 55px;
+  margin-bottom: 0;
 }
 @-webkit-keyframes text-pop-up-top {
   0% {
