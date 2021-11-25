@@ -1,11 +1,11 @@
 <template>
   <div class="slide-in-bck-center">
     <div class="box">
-      <!--    class="text-focus-in"-->
-      <h1 id="greeting" tg-name="opacity">Hi,I'm BeamStark</h1>
+      <h1 id="greeting" tg-name="opacity" style="color: white">Hi,I'm
+        <b style="color: black"> BeamStark</b></h1>
       <h2 class="tracking-in-contract">There's my SELF-INTRODUCTION</h2>
       <div id="container" tg-name="_" tg-ref="container" tg-from="0" tg-to="10" tg-step="1">
-        <div tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
+        <div id="fontBox" tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
         <p tg-name="opacity" tg-filter="1!" tg-follow="container">My Chinese name is
           <b>LinagHao
         </b>,I
@@ -64,7 +64,6 @@
 
 </template>
 
-
 <script>
 export default {
   name: "Introduction"
@@ -72,13 +71,13 @@ export default {
 </script>
 
 <style scoped>
+#fontBox{
+  padding: 20px 50px;
+}
 #container{
+  width: 100%;
   text-align: center;
-  /*margin: 100vh 0;*/
-  /*letter-spacing: -1.2px;*/
-  /*line-height: 1.22em;*/
-  /*width: 800px;*/
-  font-size: 2.5rem;
+  font-size: 35px;
   font-weight: 500;
 }
 p{
@@ -94,8 +93,10 @@ both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both}
   font-family: Helvetica;
 }
 #greeting{
+  margin: 0 0;
+  padding-bottom: -10px;
   padding-left: 30px;
-  font-size: 5rem;
+  font-size: 55px;
   opacity: var(--opacity);
   transform: translateX(calc(var(--scrolled) * 10px)); /* 转换为 px 单位 */
 }
@@ -204,7 +205,7 @@ box::after {
   -webkit-animation: tracking-in-contract 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   animation: tracking-in-contract 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   padding-left: 30px;
-  font-size: 28px;
+  font-size: 26px;
 }
 @-webkit-keyframes tracking-in-contract {
   0% {
