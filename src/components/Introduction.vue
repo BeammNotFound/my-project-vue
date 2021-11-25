@@ -42,7 +42,7 @@
           they're
           called of
           the backend development,
-          just as wll 🤗</p>
+          just as will 🤗</p>
         <p tg-name="opacity" tg-filter="8!" tg-follow="container">Like Spring
           Boot,SSM-framework,Spring-MVC,Swagger,MyBatis and MyBatis-Plus,Redis,Linux,Maven,Git and so
           on.
