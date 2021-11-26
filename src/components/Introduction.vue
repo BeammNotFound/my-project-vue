@@ -7,8 +7,8 @@
       <div id="container" tg-name="_" tg-ref="container" tg-from="0" tg-to="10" tg-step="1">
         <div id="fontBox" tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
         <p tg-name="opacity" tg-filter="1!" tg-follow="container">My Chinese name is
-          <b>LinagHao</b>,I was born in<a
-              href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%B7%9E%E5%B8%82"> Zhengzhou</a>,Henan province.</p>
+          <b>LinagHao</b>,I was born in <a
+              href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%B7%9E%E5%B8%82">Zhengzhou</a>,Henan province.</p>
         <p tg-name="opacity" tg-filter="2!" tg-follow="container">I'm studying in <a
             href="https://zh.wikipedia.org/wiki/%E9%83%91%E5%B7%9E%E8%A5%BF%E4%BA%9A%E6%96%AF%E5%AD%A6%E9%99%A2">SIAS University</a> and I was born in 1999.</p>
         <p tg-name="opacity" tg-filter="3!" tg-follow="container">My undergraduate
@@ -100,11 +100,9 @@ both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both}
 .box {
   margin-top: 10px;
   padding-bottom: 10px;
-  /*padding-left: 30px;*/
   width: 100%;
   height: 100%;
   border-radius: 9px;
-  /*margin: 0;*/
   min-height: 100vh;
   background-image:
     radial-gradient(closest-side,rgba(235,105,78,1),rgba(235,105,78,0)),

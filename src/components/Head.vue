@@ -3,7 +3,7 @@
     <img class="bounce-in-top" alt="" src='@/images/logo.png'>
     <div class="color-change-2x">
       <h1 class="text-focus-in">Welcome to BeamStark Home</h1>
-      <button v-on:click="updateMsg" class="vibrate-1">{{ msg }}</button>
+      <button class="vibrate-1" v-on:click="updateMsg()">{{ msg }}</button>
     </div>
     <h1 class="text-pop-up-top">HERE WE GO</h1>
     <img class="shake-vertical" src="@/images/arrows.png">
@@ -261,13 +261,14 @@
 .text-focus-in {
   -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  margin-bottom: 0;
 }
 .vibrate-1 {
-  -webkit-animation: vibrate-1 0.4s linear infinite both;
+  -webkit-animation: vibrate-1 0.6s linear infinite both;
   animation: vibrate-1 0.5s linear infinite both;
   background-color: aqua;
   border-radius: 10px;
-  margin-top: -20px;
+  margin: 10px 0;
 }
 @-webkit-keyframes vibrate-1 {
   0% {
