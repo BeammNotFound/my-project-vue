@@ -1,9 +1,10 @@
 <template>
-  <div class="slide-in-fwd-center">
+  <div class="slide-in-fwd-center" id="HeadBox">
     <img class="bounce-in-top" alt="" src='@/images/logo.png'>
     <div class="color-change-2x">
       <h1 class="text-focus-in">Welcome to BeamStark Home</h1>
       <button class="vibrate-1" v-on:click="updateMsg()">{{ msg }}</button>
+      <p>❤️ {{like}}</p>
     </div>
     <h1 class="text-pop-up-top">HERE WE GO</h1>
     <img class="shake-vertical" src="@/images/arrows.png">
@@ -17,10 +18,21 @@
         type: String,
         default:'Like There 🌈'
       },
+      like:{
+        default: 0
+      },
+      liked:{
+        type: Boolean,
+        default: false
+      }
     },
     methods: {
       updateMsg(){
         this.msg = 'Thanks 🎈'
+        if (this.liked == false) {
+          this.like += 1;
+        }
+        this.liked = true
       }
     }
   }
@@ -28,6 +40,9 @@
 </script>
 
 <style scoped>
+#HeadBox{
+  margin-bottom: 100vh;
+}
 .shake-vertical{
   -webkit-animation:shake-vertical 2.5s cubic-bezier(.455,.03,.515,.955) both;
   animation:shake-vertical 2.5s cubic-bezier(.455,.03,.515,.955) both;

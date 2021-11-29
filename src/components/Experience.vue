@@ -1,5 +1,5 @@
 <template>
-<div id="box">
+<div id="experienceBox">
 <!--  <h1>I'm Coding...To Be Continue</h1>-->
   <h1 id="front">This's <a href="http://monsterteam.top:81">PRP</a> that's the kind of work I do
     <img id="img" src="@/images/prp-web-icon2.png">
@@ -21,7 +21,13 @@
 </template>
 
 <script>
-
+function showTop2() {
+  var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+  if (scrollTop > 160) {
+    document.getElementById("box").style.display = "block";
+  }
+}
+window.onscroll  = showTop2;
 </script>
 
 <style scoped>
@@ -31,11 +37,12 @@
 #front{
   padding: 10px 40px;
 }
-#box{
+#experienceBox {
   width: 100%;
   height: 100%;
   margin-top: 10px;
   padding-bottom: 10px;
+  display: none;
 }
 
 #ncdc{

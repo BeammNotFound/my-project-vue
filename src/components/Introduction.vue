@@ -1,5 +1,5 @@
 <template>
-  <div class="slide-in-bck-center">
+  <div class="slide-in-bck-center" id="bigBox">
     <div class="box">
       <h1 id="greeting" tg-name="opacity" style="color: white">Hi,I'm
         <b style="color: black"> BeamStark</b></h1>
@@ -61,9 +61,11 @@
 </template>
 
 <script>
-export default {
-  name: "Introduction"
-}
+import top from 'src/js/ChengeStyleByScroll.js'
+
+window.onscroll  = top(160)
+
+
 </script>
 
 <style scoped>
@@ -79,10 +81,15 @@ export default {
 p{
   --opacity: 0.3;
   opacity: var(--opacity);
+  font-family: Helvetica;
+  font-style: normal;
 }
 .slide-in-bck-center{-webkit-animation:slide-in-bck-center .10s cubic-bezier(.25,.46,.45,.94)
-both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both}
-
+both;animation:slide-in-bck-center .7s cubic-bezier(.25,.46,.45,.94) both;
+}
+#bigBox{
+  display: none;
+}
 @-webkit-keyframes slide-in-bck-center{0%{-webkit-transform:translateZ(600px);transform:translateZ(600px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-bck-center{0%{-webkit-transform:translateZ(600px);transform:translateZ(600px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
 :root{
   font-size: 20px;
