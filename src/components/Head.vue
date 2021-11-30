@@ -1,10 +1,10 @@
 <template>
-  <div class="slide-in-fwd-center" id="HeadBox">
+  <div class="slide-in-fwd-center">
     <img class="bounce-in-top" alt="" src='@/images/logo.png'>
     <div class="color-change-2x">
       <h1 class="text-focus-in">Welcome to BeamStark Home</h1>
       <button class="vibrate-1" v-on:click="updateMsg()">{{ msg }}</button>
-      <p>❤️ {{like}}</p>
+      <p id="like-msg">❤️ {{like}}</p>
     </div>
     <h1 class="text-pop-up-top">HERE WE GO</h1>
     <img class="shake-vertical" src="@/images/arrows.png">
@@ -36,12 +36,11 @@
       }
     }
   }
-
 </script>
 
 <style scoped>
-#HeadBox{
-  margin-bottom: 100vh;
+#like-msg{
+  margin: 5px 0;
 }
 .shake-vertical{
   -webkit-animation:shake-vertical 2.5s cubic-bezier(.455,.03,.515,.955) both;
@@ -283,7 +282,8 @@
   animation: vibrate-1 0.5s linear infinite both;
   background-color: aqua;
   border-radius: 10px;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 @-webkit-keyframes vibrate-1 {
   0% {

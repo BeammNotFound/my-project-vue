@@ -1,6 +1,5 @@
 <template>
-<div id="experienceBox">
-<!--  <h1>I'm Coding...To Be Continue</h1>-->
+<div id="experienceBox" class="">
   <h1 id="front">This's <a href="http://monsterteam.top:81">PRP</a> that's the kind of work I do
     <img id="img" src="@/images/prp-web-icon2.png">
   </h1>
@@ -13,7 +12,6 @@
       <h1>Not only that,</h1>
       <h2>This project is <a href="https://github.com/BeammNotFound/prp_">open source</a>, I am the person in charge <br>of this project.</h2>
     </div>
-
     <img class="certificate" src="@/images/certificate.jpeg" alt="">
   </div>
 
@@ -21,16 +19,10 @@
 </template>
 
 <script>
-function showTop2() {
-  var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-  if (scrollTop > 160) {
-    document.getElementById("box").style.display = "block";
-  }
-}
-window.onscroll  = showTop2;
 </script>
 
 <style scoped>
+
 #img{
   width: 27%;
 }
@@ -42,15 +34,13 @@ window.onscroll  = showTop2;
   height: 100%;
   margin-top: 10px;
   padding-bottom: 10px;
-  display: none;
 }
-
 #ncdc{
   display: flex;
   padding: 0 200px;
 }
 .certificate{
-  width: 40%;
+  width: 400px;
 }
 
 </style>

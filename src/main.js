@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import './js/ChengeStyleByScroll.js'
 
 Vue.config.productionTip = false
 
